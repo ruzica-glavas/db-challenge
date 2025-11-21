@@ -1,5 +1,7 @@
-**Gestione biblioteca**␣␣
+**Gestione biblioteca**
+
 Per creare il diagramma della gestione di una biblioteca, sono partità dall'entità libri. Innanzittuto ho definito la relazione tra libri e autori, la quale é una relazione **molti a molti** e quindi c'era bisogno della creazione di una tabella **pivot** nella quale inserire le foreign key.
 Sia la relazione tra **libri e categorie** e **libri e prestiti** é una relazione **1 a molti**. Tra libri e categorie, **una categoria può avere più libri** mentre **un libro può avere una categoria**.
-Per quanto riguarda i prestiti, **un libro può avere più prestiti**, mentre **un prestito può essere associato ad un libro**.␣␣
+Per quanto riguarda i prestiti, **un libro può avere più prestiti**, mentre **un prestito può essere associato ad un libro**.
+
 Anche la relazione tra **prestiti e utenti** é una relazione una a molti, in quanto **utente può avere più prestiti** mentre **un prestito può essere associato ad un singolo utente**. Dopo aver definito le relazioni, ho inserito la Foreign Key nella tabella lato 'molti' (N) della relazione 1:N, in modo che ciascun record di questa tabella possa riferirsi al corrispondente record della tabella lato 'uno' (1).
